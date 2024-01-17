@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>demo36</title>
+        <script>
+            //Parameterized Constructor
+            class Product
+            {
+                constructor(id,category,name,cost)
+                {
+                    this.pid = id
+                    this.pcategory = category 
+                    this.pname = name
+                    this.pcost = cost
+                }
+                display()
+                {
+                    
+                    document.writeln("Product Id="+this.pid+"</br>")
+                    document.writeln("Product Category="+this.pcategory+"</br>")
+                    document.writeln("Product Name="+this.pname+"</br>")
+                    document.writeln("Product Cost="+this.pcost+"</br>")
+                }
+            }
+            const p1 = new Product(101,"books","MSWD",280.5)
+            p1.display()
+            const p2 = new Product(101,"clothes","Saree",5000.0)
+            p2.display()
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>
